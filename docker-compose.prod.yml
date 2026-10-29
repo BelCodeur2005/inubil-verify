@@ -46,10 +46,10 @@ services:
     networks:
       - inubil-network
 
-  # ─── Frontend Angular (nginx) ──────────────────────────────────────────────
+  # ─── Frontend React (nginx) ────────────────────────────────────────────────
   frontend:
     build:
-      context: ./frontend
+      context: ./inubil-verify-front
       dockerfile: Dockerfile
       target: production
     container_name: inubil_frontend_prod
